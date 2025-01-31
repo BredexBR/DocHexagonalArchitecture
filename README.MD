@@ -2,6 +2,26 @@
 ## Proposta
 Criar uma documentação para servir de referência para iniciantes na criação de um projeto com arquitetura Hexagonal utilizando o framework Spring Boot e linguagem de programação Java.
 
+# Índice
+
+1. [Proposta](#proposta)  
+2. [O que é a Arquitetura Hexagonal](#o-que-e-a-arquitetura-hexagonal)  
+3. [Benefícios](#beneficios)  
+4. [Arquitetura](#arquitetura)  
+5. [Explicação](#explicacao)  
+   5.1 [Main](#main)  
+   5.2 [Adapters](#adapters)  
+   5.3 [Application](#application)  
+   5.4 [Domain](#domain)  
+   5.5 [Infraestructure/Config](#infraestructureconfig)  
+   5.6 [Utils](#utils)  
+   5.7 [Test](#test)  
+       - 5.7.1 [Configs](#configs)  
+       - 5.7.2 [IntegrationTest](#integrationtest)  
+           - 5.7.2.1 [Controller](#integrationtestcontroller)  
+       - 5.7.3 [Unittest](#unittest)  
+
+
 ## O que é a arquitetura Hexagonal
 A **Arquitetura Hexagonal**, também conhecida como **Ports and Adapters**, é um modelo de design que busca desacoplar a lógica de negócio da infraestrutura, tornando o sistema mais flexível e testável. Essa abordagem permite que a aplicação se comunique com diferentes tecnologias (bancos de dados, APIs externas, interfaces de usuário) através de "portas" (interfaces) e "adaptadores" (implementações dessas interfaces).
 
